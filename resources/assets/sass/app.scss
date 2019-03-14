@@ -1,14 +1,68 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+/**
+ * -------------------------------------------------------
+ * GENERAL STYLES
+ * -------------------------------------------------------
+ */
+body, html {
+	font-family: $font-family-sans-serif;
+}
+.wrapper, footer {
+	width: 100%;
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+/**
+ * -------------------------------------------------------
+ * HEADER STYLES
+ * -------------------------------------------------------
+ */
+.navbar-light {
+	background-color: transparent!important;
+}
+.nav-link {
+	text-transform: uppercase;
+	color: $purple!important;
+	font-size: $font-size-base;
+	font-weight: 500;
+
+	&:hover {
+		color: $rose!important;
+	}
+}
+
+/**
+ * -------------------------------------------------------
+ * FOOTER STYLES
+ * -------------------------------------------------------
+ */
+.footer-top {
+	background-color: $midium-purple;
+	padding: 50px 0;
+
+	p {
+		color: #fff;
+		font-family: $font-family-secondary;
+		font-weight: 300;
+		line-height: 28px;
+		font-family: .9rem;
+	}
+}
+footer h6 {
+	color: #fff;
+	font-size: 1.1rem;
+	padding-bottom: 1.7rem;
+}
+
+.footer-bottom {
+	background-color: $dark-purple;
+	padding: 20px 0;
+	font-size: .9rem;
+	color: #fff;
 }
